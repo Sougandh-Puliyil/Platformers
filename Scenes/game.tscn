@@ -1,19 +1,23 @@
 [gd_scene format=3 uid="uid://caii1ad2sg40y"]
 
 [ext_resource type="PackedScene" uid="uid://lyig88trr4u1" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://baxx6v10opf12" path="res://Levels/level_1.tscn" id="1_qxrlw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
 distance = -233.0
 
 [node name="Game" type="Node2D" unique_id=844903574]
 
+[node name="Level1" parent="." unique_id=1711344900 instance=ExtResource("1_qxrlw")]
+
 [node name="player" parent="." unique_id=328668413 instance=ExtResource("1_ebmjs")]
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=279142278]
 scale = Vector2(0.3760138, 0.3760138)
+zoom = Vector2(3.605, 3.605)
 position_smoothing_enabled = true
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1378452010]
+[node name="WorldBoundary" type="StaticBody2D" parent="." unique_id=1378452010]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=833478041]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBoundary" unique_id=833478041]
 shape = SubResource("WorldBoundaryShape2D_ebmjs")
