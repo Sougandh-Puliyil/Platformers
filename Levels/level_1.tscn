@@ -221,7 +221,7 @@ position = Vector2(2, 147)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=375373903]
 shape = SubResource("WorldBoundaryShape2D_rf6l5")
 
-[node name="Tutorials" type="Area2D" parent="." unique_id=1917606155]
+[node name="Tutorials" type="Node2D" parent="." unique_id=1273041310]
 
 [node name="Area2D" type="Area2D" parent="Tutorials" unique_id=1090530875]
 script = ExtResource("4_rf6l5")
