@@ -43,7 +43,7 @@ animations = [{
 radius = 5.0
 
 [node name="player" type="CharacterBody2D" unique_id=328668413]
-scale = Vector2(2.659477, 2.659477)
+scale = Vector2(0.75632715, 0.75632715)
 collision_layer = 2
 script = ExtResource("1_cvnsp")
 

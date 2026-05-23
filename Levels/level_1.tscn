@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://baxx6v10opf12"]
 
-[ext_resource type="Texture2D" path="res://Assets/sprites/world_tileset.png" id="1_n0qsc"]
+[ext_resource type="Texture2D" uid="uid://dpng7kuj3nwam" path="res://Assets/sprites/world_tileset.png" id="1_n0qsc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3anf8"]
 texture = ExtResource("1_n0qsc")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
