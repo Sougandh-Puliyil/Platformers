@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dsvdy66d8dpm6" path="res://Scenes/killzone.tscn" id="3_3mhv4"]
 [ext_resource type="Script" uid="uid://cvgbino5kogo7" path="res://Scripts/tutorials.gd" id="4_rf6l5"]
 [ext_resource type="PackedScene" uid="uid://lyig88trr4u1" path="res://Scenes/player.tscn" id="5_syshm"]
+[ext_resource type="FontFile" uid="uid://br6mlg53txibc" path="res://Assets/fonts/PixelOperator8.ttf" id="6_77x7w"]
 [ext_resource type="PackedScene" uid="uid://4lfqp46butpy" path="res://Scenes/slime.tscn" id="7_0urlm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3anf8"]
@@ -296,7 +297,7 @@ position = Vector2(2, 147)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=375373903]
 shape = SubResource("WorldBoundaryShape2D_rf6l5")
 
-[node name="Tutorials" type="Area2D" parent="." unique_id=1917606155]
+[node name="Tutorials" type="Node" parent="." unique_id=1768926063]
 
 [node name="Area2D" type="Area2D" parent="Tutorials" unique_id=1090530875]
 script = ExtResource("4_rf6l5")
@@ -306,10 +307,12 @@ position = Vector2(-424, 57.5)
 shape = SubResource("RectangleShape2D_3mhv4")
 
 [node name="label" type="Label" parent="Tutorials/Area2D/CollisionShape2D" unique_id=1831953472]
-offset_left = -96.0
-offset_top = -39.5
-offset_right = 104.0
-offset_bottom = -16.5
+offset_left = -80.0
+offset_top = -25.5
+offset_right = 83.0
+offset_bottom = -11.5
+theme_override_fonts/font = ExtResource("6_77x7w")
+theme_override_font_sizes/font_size = 8
 text = "Press Arrow Keys to Move"
 
 [node name="Area2D2" type="Area2D" parent="Tutorials" unique_id=293511397]
@@ -320,10 +323,12 @@ position = Vector2(-136, 58)
 shape = SubResource("RectangleShape2D_3mhv4")
 
 [node name="label" type="Label" parent="Tutorials/Area2D2/CollisionShape2D2" unique_id=1868092376]
-offset_left = -92.0
-offset_top = -53.0
-offset_right = 108.0
-offset_bottom = -30.0
+offset_left = -105.0
+offset_top = -26.0
+offset_right = 22.0
+offset_bottom = -11.0
+theme_override_fonts/font = ExtResource("6_77x7w")
+theme_override_font_sizes/font_size = 8
 text = "Press Space to Jump"
 
 [node name="Area2D3" type="Area2D" parent="Tutorials" unique_id=1085088009]
@@ -334,10 +339,12 @@ position = Vector2(136, -23)
 shape = SubResource("RectangleShape2D_3mhv4")
 
 [node name="label" type="Label" parent="Tutorials/Area2D3/CollisionShape2D3" unique_id=1511442115]
-offset_left = -46.0
-offset_top = -34.0
-offset_right = 154.0
-offset_bottom = -11.0
+offset_left = -38.0
+offset_top = -21.0
+offset_right = 49.0
+offset_bottom = -9.0
+theme_override_fonts/font = ExtResource("6_77x7w")
+theme_override_font_sizes/font_size = 8
 text = "Collect Coins!"
 
 [node name="Area2D4" type="Area2D" parent="Tutorials" unique_id=121978428]
@@ -348,10 +355,12 @@ position = Vector2(441, -39)
 shape = SubResource("RectangleShape2D_3mhv4")
 
 [node name="label" type="Label" parent="Tutorials/Area2D4/CollisionShape2D4" unique_id=1956136024]
-offset_left = -55.0
-offset_top = -35.0
-offset_right = 145.0
-offset_bottom = -12.0
+offset_left = -50.0
+offset_top = -20.0
+offset_right = 51.0
+offset_bottom = -8.0
+theme_override_fonts/font = ExtResource("6_77x7w")
+theme_override_font_sizes/font_size = 8
 text = "You fall, YOU DIE"
 
 [node name="slime" parent="." unique_id=1802959883 instance=ExtResource("7_0urlm")]
