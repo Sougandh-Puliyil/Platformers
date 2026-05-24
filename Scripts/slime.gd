@@ -9,6 +9,7 @@ var direction = 1
 
 
 func _process(delta):
+	# Slime movement
 	if ray_cast_right.is_colliding():
 		direction = -1
 		animated_sprite.flip_h = true
