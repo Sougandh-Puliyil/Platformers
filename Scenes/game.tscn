@@ -1,16 +1,7 @@
 [gd_scene format=3 uid="uid://caii1ad2sg40y"]
 
 [ext_resource type="PackedScene" uid="uid://baxx6v10opf12" path="res://Levels/level_1.tscn" id="1_qxrlw"]
-[ext_resource type="Script" uid="uid://b1kjoa2vprq1m" path="res://Scripts/game_manager.gd" id="2_qxrlw"]
 
 [node name="Game" type="Node2D" unique_id=844903574]
 
 [node name="Level1" parent="." unique_id=1711344900 instance=ExtResource("1_qxrlw")]
-
-[node name="GameManager" type="Node" parent="." unique_id=632025071]
-unique_name_in_owner = true
-script = ExtResource("2_qxrlw")
-
-[node name="Label" type="Label" parent="GameManager" unique_id=281758822]
-offset_right = 40.0
-offset_bottom = 23.0

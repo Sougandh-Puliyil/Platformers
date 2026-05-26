@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://lyig88trr4u1" path="res://Scenes/player.tscn" id="5_syshm"]
 [ext_resource type="FontFile" uid="uid://br6mlg53txibc" path="res://Assets/fonts/PixelOperator8.ttf" id="6_77x7w"]
 [ext_resource type="PackedScene" uid="uid://4lfqp46butpy" path="res://Scenes/slime.tscn" id="7_0urlm"]
+[ext_resource type="Script" uid="uid://b1kjoa2vprq1m" path="res://Scripts/level_manager.gd" id="9_xoyoh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3anf8"]
 texture = ExtResource("1_n0qsc")
@@ -366,6 +367,10 @@ text = "You fall, YOU DIE"
 [node name="slime" parent="." unique_id=1802959883 instance=ExtResource("7_0urlm")]
 position = Vector2(-425, 52)
 
+[node name="LevelManager" type="Node" parent="." unique_id=674240565]
+unique_name_in_owner = true
+script = ExtResource("9_xoyoh")
+
 [node name="player" parent="." unique_id=328668413 instance=ExtResource("5_syshm")]
 z_index = 1
 position = Vector2(-422.99997, 1.9999999)
@@ -377,3 +382,10 @@ limit_left = -9999989
 limit_right = 10000011
 limit_bottom = 120
 position_smoothing_enabled = true
+
+[node name="Label" type="Label" parent="player/Camera2D" unique_id=1480380585]
+offset_left = -559.09265
+offset_top = -312.95114
+offset_right = -519.09265
+offset_bottom = -289.95114
+text = "Score is 0"
