@@ -2,17 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://bf45eht4c80wp" path="res://Assets/sprites/platforms.png" id="1_pquxj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8n7cf"]
-size = Vector2(30, 8)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pquxj"]
+size = Vector2(28, 8)
 
-[node name="Platform" type="AnimatableBody2D" unique_id=1067116450]
+[node name="PlatformBody" type="AnimatableBody2D" unique_id=693757106]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1103670556]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=21300944]
 texture = ExtResource("1_pquxj")
 region_enabled = true
-region_rect = Rect2(16.819, 0, 30.546425, 8.706394)
+region_rect = Rect2(17.462166, 0, 28.96643, 8.612915)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1613972959]
-shape = SubResource("RectangleShape2D_8n7cf")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1580643388]
+shape = SubResource("RectangleShape2D_pquxj")
 one_way_collision = true
-debug_color = Color(0.65572643, 0.39338815, 0.85863143, 0.41960785)
