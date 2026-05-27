@@ -2,11 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dpng7kuj3nwam" path="res://Assets/sprites/world_tileset.png" id="1_n0qsc"]
 [ext_resource type="PackedScene" uid="uid://c00ejyc0y7eli" path="res://Scenes/coin.tscn" id="2_dilhk"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" path="res://Scenes/Platform.tscn" id="2_rfktq"]
-=======
 [ext_resource type="PackedScene" uid="uid://dpk6dqdxs0icw" path="res://Scenes/Platform.tscn" id="2_rfktq"]
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 [ext_resource type="PackedScene" uid="uid://dsvdy66d8dpm6" path="res://Scenes/killzone.tscn" id="3_3mhv4"]
 [ext_resource type="Script" uid="uid://cvgbino5kogo7" path="res://Scripts/tutorials.gd" id="4_rf6l5"]
 [ext_resource type="PackedScene" uid="uid://lyig88trr4u1" path="res://Scenes/player.tscn" id="5_syshm"]
@@ -233,44 +229,24 @@ layer_1/tile_data = PackedInt32Array(131068, 131072, 8, -4, 131072, 4, 131074, 1
 layer_2/name = "Interaction Layer"
 layer_2/tile_data = PackedInt32Array(262135, 524288, 3, 262117, 524288, 3, -131064, 524288, 3)
 
-<<<<<<< HEAD
-[node name="Platforms" type="Node2D" parent="." unique_id=212771876]
-=======
 [node name="Platforms" type="Node2D" parent="." unique_id=2024949698]
 position = Vector2(497, -28)
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 
 [node name="PlatformBody" parent="Platforms" unique_id=693757106 instance=ExtResource("2_rfktq")]
 
-<<<<<<< HEAD
-[node name="Platform" parent="Platforms/Platform" unique_id=183814821 instance=ExtResource("2_rfktq")]
-
-[node name="Platform2" parent="Platforms" unique_id=527615772 instance=ExtResource("2_dilhk")]
-position = Vector2(814, -28)
-=======
 [node name="PlatformBody2" parent="Platforms" unique_id=1704796286 instance=ExtResource("2_rfktq")]
 position = Vector2(323, 0)
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/PlatformBody2" unique_id=970861690]
 libraries/ = SubResource("AnimationLibrary_xoyoh")
 autoplay = &"move_horizontally"
 
-<<<<<<< HEAD
-[node name="Platform" parent="Platforms/Platform2" unique_id=390507521 instance=ExtResource("2_rfktq")]
-
-[node name="Platform3" parent="Platforms" unique_id=1357568131 instance=ExtResource("2_dilhk")]
-position = Vector2(814, -28)
-=======
 [node name="PlatformBody3" parent="Platforms" unique_id=1408171549 instance=ExtResource("2_rfktq")]
 position = Vector2(323, 0)
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/PlatformBody3" unique_id=1062239037]
 libraries/ = SubResource("AnimationLibrary_xoyoh")
 autoplay = &"RESET"
-<<<<<<< HEAD
-=======
 
 [node name="PlatformBody4" parent="Platforms" unique_id=1753652318 instance=ExtResource("2_rfktq")]
 position = Vector2(618, 0)
@@ -289,7 +265,6 @@ position = Vector2(780, -91)
 
 [node name="PlatformBody9" parent="Platforms" unique_id=322273415 instance=ExtResource("2_rfktq")]
 position = Vector2(857, -91)
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 
 [node name="Coins" type="Node2D" parent="." unique_id=28752427]
 
@@ -323,11 +298,7 @@ position = Vector2(2, 147)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=375373903]
 shape = SubResource("WorldBoundaryShape2D_rf6l5")
 
-<<<<<<< HEAD
-[node name="Tutorials" type="Node2D" parent="." unique_id=1273041310]
-=======
 [node name="Tutorials" type="Node" parent="." unique_id=1768926063]
->>>>>>> 5a878d3fb38508fbaaf7e948448b9b4fc8495081
 
 [node name="Area2D" type="Area2D" parent="Tutorials" unique_id=1090530875]
 script = ExtResource("4_rf6l5")
